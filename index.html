@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esta soy yo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Brittany Medina</h1>
+  <img src="https://th.bing.com/th/id/OIP.ZA_DZ37XD9Wx_ZcjP-sM-QHaHa?w=206&h=206&c=7&r=0&o=5&pid=1.7" alt="Yo"/>
+  
+  <section>
+    <h3>Hola, soy Brittany Medina. Tengo <strong>16 años</strong> y vivo en Canóvanas, Puerto Rico.</h3>
+  </section>
+
+  <a href="https://en.wikipedia.org/wiki/Genshin_Impact">Uno de mis juegos favoritos</a><br>
+  <img src="https://th.bing.com/th/id/OIP.SlaXvjkl6MsfWXJamDDK_AHaJ4?w=129&h=180&c=7&r=0&o=5&pid=1.7" alt="Imágen de juego" /><br>
+
+  <h4>
+    Me gusta leer, ver ánime, jugar y aprender idiomas. Soy bastante nueva en codificación pero ya he creado una página web anteriormente pero tuve que tener mucha ayuda :,).
+  </h4>
+
+  <a href="https://en.wikipedia.org/wiki/Blue_Lock">Uno de los ánimes que vi recientemente</a><br>
+  <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/Blue_Lock_manga_volume_1.png" alt="Imágen de ánime"><br>
+
+  <h2>Cosas que me gustan</h2>
+  <ul>
+    <li>Las matemáticas</li>
+    <li>El mantecado</li>
+    <li>Tomar café</li>
+    <li>Aprender chino Mandarín</li>
+  </ul>
+
+  <div class="card-container">
+  <div class="card">Pon tu mouse encima de mí!</div>
+</div>
+
+<h2>Contáctame</h2>
+  <form action="#" method="post">
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Correo electrónico:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+
+<script>
+  const form = document.querySelector('form');
+  const submitButton = form.querySelector('input[type="submit"]');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    submitButton.classList.add('loading');
+    submitButton.value = "Enviando...";
+
+    setTimeout(() => {
+      submitButton.classList.remove('loading');
+      submitButton.value = "Enviar";
+      alert("¡Formulario enviado!");
+      form.reset();
+}, 2000);
+  });
+</script>
+</body>
+</html>
