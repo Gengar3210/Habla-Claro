@@ -94,7 +94,6 @@ section p{
 }
 
 .card:hover {
-  background-color: rgb(86, 102, 206);
   transform: scale(1.05);
   cursor: pointer;
 }
