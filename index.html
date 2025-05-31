@@ -20,20 +20,41 @@
 
 <header>
 <h2>¡Bienvenidos!</h2>
-  <p>Este sitio web lo creé con nosotros, los jóvenes, en mente. Su propósito es enseñarle a ustedes a comunicarse efectivamente y con empatía. Mi proyecto les ayudará, aunque de forma que les parezca simple o incluso infantil, a resolver conflictos, expresarse con confianza y mejorar sus relaciones personales y escolares. </p>
+  <p></p>
 </header><br>
-  
-  <h2>Cosas que me gustan</h2>
-  <ul>
-    <li>Las matemáticas</li>
-    <li>El mantecado</li>
-    <li>Tomar café</li>
-    <li>Aprender chino Mandarín</li>
-  </ul>
 
+<main>
+<section id="inicio">
+            <h2>Inicio</h2>
+            <p>Este sitio web lo creé con nosotros, los jóvenes, en mente. Su propósito es enseñarle a ustedes a comunicarse efectivamente y con empatía. Mi proyecto les ayudará, aunque de forma que les parezca simple o incluso infantil, a resolver conflictos, expresarse con confianza y mejorar sus relaciones personales y escolares. </p>
+            <br>
+            <img src="https://img.freepik.com/fotos-premium/grupo-amigos-adolescentes-hablando-riendo-divirtiendose-juntos_650503-2452.jpg" alt="Foto">
+        </section>
+
+        <section id="contacto">
+            <h2>Contáctame</h2>
+            <br>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="texto" name="name" id="nombre" placeholder="Click">
+                <br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" name="email" id="email" placeholder="Click">
+                <br>
+                <label for="numero">Número De Teléfono:</label>
+                <input type="number" name="number" id="number" placeholder="Click">
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+
+  
   <div class="card-container">
   <div class="card"><section>
-    <h3>Hola, soy Brittany Medina. Tengo <strong>16 años</strong> y vivo en Canóvanas, Puerto Rico.</h3>
+    <h3>¡Hola! Soy Brittany Medina, la creadora de Habla Claro.</h3>
   </section><br> </div>
 </div>
 
@@ -51,22 +72,5 @@
   <input type="submit" value="Enviar">
 </form>
 
-<script>
-  const form = document.querySelector('form');
-  const submitButton = form.querySelector('input[type="submit"]');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    submitButton.classList.add('loading');
-    submitButton.value = "Enviando...";
-
-    setTimeout(() => {
-      submitButton.classList.remove('loading');
-      submitButton.value = "Enviar";
-      alert("¡Formulario enviado!");
-      form.reset();
-}, 2000);
-  });
-</script>
 </body>
 </html>
