@@ -21,11 +21,7 @@
 <header>
 <h2>¡Bienvenidos!</h2>
   <p>Este sitio web lo creé con nosotros, los jóvenes, en mente. Su propósito es enseñarle a ustedes a comunicarse efectivamente y con empatía. Mi proyecto les ayudará, aunque de forma que les parezca simple o incluso infantil, a resolver conflictos, expresarse con confianza y mejorar sus relaciones personales y escolares. </p>
-</header>
-  
-  <section>
-    <h3>Hola, soy Brittany Medina. Tengo <strong>16 años</strong> y vivo en Canóvanas, Puerto Rico.</h3>
-  </section><br>
+</header><br>
   
   <h2>Cosas que me gustan</h2>
   <ul>
@@ -36,18 +32,23 @@
   </ul>
 
   <div class="card-container">
-  <div class="card">Pon tu mouse encima de mí!</div>
+  <div class="card"><section>
+    <h3>Hola, soy Brittany Medina. Tengo <strong>16 años</strong> y vivo en Canóvanas, Puerto Rico.</h3>
+  </section><br> </div>
 </div>
 
-<h2>Contáctame</h2>
+<h2>Contáctame</h2> 
 <form action="https://formspree.io/f/xkgbwydj" method="POST">
+  <label for="name">Nombre:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+
   <label for="email">Correo electrónico:</label><br>
   <input type="email" id="email" name="email" required><br><br>
 
   <label for="message">Mensaje:</label><br>
   <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
 
-  <button type="submit">Enviar</button>
+  <input type="submit" value="Enviar">
 </form>
 
 <script>
