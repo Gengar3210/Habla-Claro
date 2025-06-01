@@ -51,6 +51,11 @@ nav h2{
   margin-left: 5rem;
 }
 
+nav h3{
+  color: #fff0ff;
+  margin-left: 5rem;
+}
+
 nav ul{
   list-style: none;
   display: sticky:
