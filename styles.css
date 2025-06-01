@@ -32,6 +32,7 @@ body {
 .content {
   padding: 16px;
 }
+
 nav{
  background-color: #7192e;
   color: black;
@@ -52,7 +53,7 @@ nav h2{
 
 nav ul{
   list-style: none;
-  display: inline:
+  display: sticky:
 }
 
 nav ul li{
