@@ -89,8 +89,8 @@ section p{
   }
   
 .card {
-  margin-top: 0px;
-  z-index: 0;
+  margin-top: 30px;
+  z-index: auto;
   width: 300px;
   height: 50px;
   background-color: rgb(117, 88, 184);
@@ -107,6 +107,7 @@ section p{
 .card-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   align-items: center;
   height: 100px;
 }
