@@ -16,7 +16,7 @@ body {
 nav{
  background-color: #7192e;
   color: black;
-  display: inline;
+  display: flex;
   padding: 1rem;
   align-items:center;
   justify-content: space-between;
