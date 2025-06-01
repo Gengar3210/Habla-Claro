@@ -58,6 +58,7 @@ padding: 4rem;
 }
 
 section{
+scroll-margin-top: 100px;
 background-color:#dbb6ee;
 border-radius: 5px;
 color: rgb(65,63,63);
@@ -78,10 +79,12 @@ section p{
   margin-bottom: 1rem;
 }
 
-#inicio image{
+#inicio img{
     display: flex;
-    height: 50px;
-    width:auto;
+  max-width: 100%
+    height: auto;
+    width: auto;
+  margin: 0 auto;
   }
   
 .card {
