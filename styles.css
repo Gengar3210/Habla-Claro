@@ -16,7 +16,7 @@ body {
 nav{
  background-color: #7192e;
   color: black;
-  display: flex;
+  display: inline;
   padding: 1rem;
   align-items:center;
   justify-content: space-between;
@@ -33,7 +33,7 @@ nav h2{
 
 nav ul{
   list-style: none;
-  display: flex:
+  display: inline:
 }
 
 nav ul li{
